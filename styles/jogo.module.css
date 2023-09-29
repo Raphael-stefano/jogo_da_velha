@@ -1,0 +1,252 @@
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 100vh;
+}
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+}
+
+.simbolos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55px;
+}
+
+.turno{
+    background: #1f3540;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 30px;
+    width: 100px;
+    color: #a8bec9;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0px 3.5px #0e1f29;
+    font-size: 14px;
+}
+
+.turno .divMaior{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.turno .divMaior div{
+    height: 15px;
+    width: 15px;
+}
+
+.turno .divMaior p{
+    position: relative;
+    top: 1.5px;
+}
+
+.teclaReiniciar{
+    background: #a8bec9;
+    box-shadow: 0px -4px #728a96 inset;
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reiniciar {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 14px;
+    height: 14px;
+    border: 2px solid #122833;
+    border-right-color: transparent;
+    border-radius: 100px
+}
+.reiniciar::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #122833;
+    border-right: 2px solid #122833;
+    top: -3px;
+    right: -1px;
+    transform: rotate(68deg)
+}
+
+.reiniciar:hover{
+    cursor: pointer;
+}
+
+.jogo{
+    margin-top: 10px;
+    width: 100%;
+    height: 300px
+}
+
+.linha{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quadrado{
+    height: calc(99% - 10px);
+    width: calc(33% - 10px);
+    background: #1f3540;
+    border-radius: 7px;
+    box-shadow: 0px 5px #0e1f29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrado div{
+    height: 50%;
+    width: 50%;
+}
+
+.footer{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 52.5px;
+    font-size: 14px;
+}
+
+.footer .footerDiv{
+    width: calc(33.3% - 10px);
+    height: 100%;
+    border-radius: 8px;
+    color: #1a2b33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.footer .footerDiv:nth-of-type(1){
+    background: #31c4be;
+}
+
+.footer .footerDiv:nth-of-type(2){
+    background: #a8bec9;
+}
+
+.footer .footerDiv:nth-of-type(3){
+    background: #f2b237;
+}
+
+.vitoria{
+    position: fixed;
+    height: 200px;
+    width: 100%;
+    top: calc(50% - 100px);
+    right: 0px;
+    background: #1f3540;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vitoria > div{
+    margin: 5px;
+}
+
+.vencedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.vencedor span{
+    margin-left: 10px;
+}
+
+.vencedor span div{
+    height: 50px;
+    width: 50px;
+}
+
+.base{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.base div{
+    margin-left: 10px;
+    color: #1a2b33;
+}
+
+.base div:first-of-type{
+    background: #a8bec9;
+    box-shadow: 0px -4px #728a96 inset;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.base div:last-of-type{
+    background: #f2b337;
+    box-shadow: 0px -4px #ca8d12 inset;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.base div:last-of-type:hover{
+    cursor: pointer;
+}
+
+.link{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    color: inherit;
+    border-radius: inherit;
+    text-decoration: none;
+    padding-top: 50%;
+}
