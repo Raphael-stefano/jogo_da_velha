@@ -1,7 +1,7 @@
 import Xis from "@/components/xis"
 import styles from "../styles/jogo.module.css"
 import Bola from "@/components/bola"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useRouter } from "next/router"
 import Link from "next/link"
 
@@ -137,6 +137,7 @@ export default function multyplayer(){
         setQuadradoC1('')
         setQuadradoC2('')
     }
+    useEffect(verificarVitoria)
     return(
         <div className={styles.page}>
             <div className={styles.body}>
